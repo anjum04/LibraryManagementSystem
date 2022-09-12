@@ -14,9 +14,8 @@ Requirements:
 ● The librarian can choose to discontinue a book.
 ● There can be multiple copies of a book.
 
-All List of Library's users
-GET 
-http://localhost:8085/api/users
+1. All List of Library's users
+GET & link : http://localhost:8085/api/users
 
 API Endpoints api/users
 
@@ -50,13 +49,11 @@ Response
     }
 ]
 
-All List of book in Library
-
-GET
+2. All List of book in Library
+GET & link : http://localhost:8085/api/books
 Endpoint api/books
-http://localhost:8085/api/books
 
-
+Response
 [
     {
         "bookId": 1,
@@ -90,10 +87,10 @@ http://localhost:8085/api/books
     }
 ]
 
-Ability to add books to the system.
-POST
-api/books
-http://localhost:8085/api/books
+3. Ability to add books to the system.
+POST and link : http://localhost:8085/api/books
+End point : api/books
+
 Request Pay load or body
 {
     "isbn": 123459001,
@@ -109,10 +106,10 @@ Response
    "bookAuthor": "Paulo Coelho"
 }
 
-Ability to add users to the system.
-POST
-api/users
-http://localhost:8085/api/users
+4. Ability to add users to the system.
+POST and link: http://localhost:8085/api/users
+Endpoint : api/users
+
 
 Request Pay load
 {
@@ -127,7 +124,12 @@ Response
         "email": "Akshay01@gmail.com"
     }
  
-Ability to search a book by title, author.
+ 5. Ability to remove a book from System
+ DELETE and link : http://localhost:8085/api/books/book/1
+ API endpoint : book/{bookId}
+
+ 
+ 6. Ability to search a book by title, author.
 search a book by title 
 API End point : api/search/book/{name} 
 GET Method and link : http://localhost:8085/api/books/search/book/The Alchemist
@@ -142,7 +144,7 @@ Response
     }
 ]
 
-search a book by Author
+7. search a book by Author
 API End point :  api/search/book/{name}
 GET Method and link : http://localhost:8085/api/books/search/book/Morgan Housel
 request example (search a book by Author name("Morgan Housel"))
@@ -156,7 +158,7 @@ Response
     }
 ]
    
-Ability to lend books to users.
+8. Ability to lend books to users.
 API End point : api/library/lend/{userid}/{bookid}
 Get Method and link : http://localhost:8085/api/library/lend/2/4
 
@@ -170,7 +172,7 @@ Get Method and link : http://localhost:8085/api/library/lend/2/4
     "status": "Not Avaiable"
 }
 
-Ability to return books to the library.
+9. Ability to return books to the library.
 API End point:  api/library/return/{borrowerId}/{bookId}
 Get Method and link :  http://localhost:9080/api/return/2/4
 Response
