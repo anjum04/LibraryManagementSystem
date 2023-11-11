@@ -2,21 +2,21 @@
 A Spring Boot application for REST APIs; its purpose is to demonstrate various API .<br>
 Requirements:<br>
 ● DB setup for the application.<br>
-● Users of the library can view all the books in the library.
-● ISBN is used to maintain the uniqueness of the books.
-● You can search for books by book name or author name.
-● Once a book is selected, the user can check it out of the library.
-● The default return time can be set to 7 days.
-● The user can return a book at any given time.
-● The librarian can add books to the library.
-● The return time can be extended by the librarian.
-● The librarian can choose to discontinue a book.
-● There can be multiple copies of a book.
+● Users of the library can view all the books in the library.<br>
+● ISBN is used to maintain the uniqueness of the books.<br>
+● You can search for books by book name or author name.<br>
+● Once a book is selected, the user can check it out of the library.<br>
+● The default return time can be set to 7 days.<br>
+● The user can return a book at any given time.<br>
+● The librarian can add books to the library.<br>
+● The return time can be extended by the librarian.<br>
+● The librarian can choose to discontinue a book.<br>
+● There can be multiple copies of a book.<br>
 
-1. All List of Library's users
-GET & link : http://localhost:8085/api/users
+1. All List of Library's users<br>
+GET & link : http://localhost:8085/api/users <br>
 
-API Endpoints api/users
+API Endpoints: api/users <br>
 
 Response 
 
@@ -47,10 +47,10 @@ Response
         "email": "Abhishek05@gmail.com"
     }
 ]
-
-2. All List of book in Library
-GET & link : http://localhost:8085/api/books
-Endpoint api/books
+<br>
+2. All List of book in Library <br>
+GET & link : http://localhost:8085/api/books<br>
+Endpoint: api/books <br>
 
 Response
 [
@@ -85,10 +85,11 @@ Response
         "bookAuthor": "Morgan Housel"
     }
 ]
-
-3. Ability to add books to the system.
-POST and link : http://localhost:8085/api/books
-End point : api/books
+<br>
+<br>
+3. Ability to add books to the system.<br>
+POST and link : http://localhost:8085/api/books<br>
+End point : api/books<br>
 
 Request Pay load or body
 {
@@ -104,9 +105,9 @@ Response
    "bookName": "The Alchemist",
    "bookAuthor": "Paulo Coelho"
 }
-
-4. Ability to add users to the system.
-POST and link: http://localhost:8085/api/users
+<br>
+4. Ability to add users to the system.<br>
+POST and link: http://localhost:8085/api/users<br>
 Endpoint : api/users
 
 
