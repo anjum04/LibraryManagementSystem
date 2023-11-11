@@ -1,7 +1,7 @@
 # Springboot_LibraryManagementSystem
-A Spring Boot application for REST APIs; its purpose is to demonstrate various API .&nbsp;
-Requirements:
-● DB setup for the application.
+A Spring Boot application for REST APIs; its purpose is to demonstrate various API .<br>
+Requirements:<br>
+● DB setup for the application.<br>
 ● Users of the library can view all the books in the library.
 ● ISBN is used to maintain the uniqueness of the books.
 ● You can search for books by book name or author name.
