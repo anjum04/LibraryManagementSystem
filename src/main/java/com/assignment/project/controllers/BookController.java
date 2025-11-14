@@ -50,5 +50,11 @@ public class BookController {
 		   this.bookServices.removeBook(bookId);
 		   return null;
 	}
+
+    // Test api
+    @GetMapping("/test")
+    public String testApi(){
+        return "Testing API";
+    }
 	
 }
